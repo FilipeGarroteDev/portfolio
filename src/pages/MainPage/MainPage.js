@@ -6,13 +6,13 @@ export default function MainPage() {
   const [cursorY, setCursorY] = useState()
 
   window.addEventListener('mousemove', (e) => {
-    setCursorX(e.pageX)
-    setCursorY(e.pageY)
+    setCursorX(e.pageX - 25)
+    setCursorY(e.pageY - 25)
   })
 
   return (
     <MainContainer>
-      <Cursor cursorX={cursorX} cursorY={cursorY}/>
+      <Cursor cursorX={cursorX} cursorY={cursorY}>.</Cursor>
       <GreetingsBox>
         <span>Olá, meu nome é <strong>Filipe Garrote</strong><br></br> e eu construo soluções web à sua medida.</span>
         <p>Sou desenvolvedor web fullstack, mas, acima de tudo, sou um resolvedor de problema. Vamos tirar sua ideia do papel e construir uma soulução inovadora juntos?</p>
@@ -28,6 +28,7 @@ const MainContainer = styled.main`
   width: 100vw;
   height: 100vh;
   background-color: #474343;
+  cursor: none;
 `
 
 const GreetingsBox = styled.div`
@@ -65,9 +66,16 @@ const GreetingsBox = styled.div`
 `
 
 const Cursor = styled.div`
+  font-size: 25px;
+  box-sizing: border-box;
+  color: white;
   width: 50px;
   height: 50px;
   position: fixed;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: ${props => props.cursorX+'px'};
   top: ${props => props.cursorY+'px'};
   border: 1px solid white;
