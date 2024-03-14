@@ -1,13 +1,19 @@
 import styled from "styled-components";
+import PageStyledFooter from "../../components/PageStyledFooter";
+import PageStyledHeader from "../../components/PageStyledHeader";
 
 export default function PersonalInfoPage() {
    
 
   return (
-    <MainContainer id='sobreSection'>
-        <h1>Quem é esse&nbsp;<span>Pokemon</span>&nbsp;DEV?</h1>
-
-    </MainContainer>
+    <>
+      <PageStyledHeader />
+      <MainContainer id='sobreSection'>
+          <h1>Quem é esse&nbsp;<span>Pokemon</span>&nbsp;DEV?</h1>
+        
+      </MainContainer>
+      <PageStyledFooter position={2}/>
+    </>
   );
 }
 

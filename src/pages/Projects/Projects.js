@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import PageStyledFooter from "../../components/PageStyledFooter";
+import PageStyledHeader from "../../components/PageStyledHeader";
 
 export default function Projects() {   
 
   return (
-    <MainContainer id='projetosSection'>
-        <h1>Projetos</h1>
+    <>
+      <PageStyledHeader position={2}/>
+      <MainContainer id='projetosSection'>
+          <h1>Projetos</h1>
 
-    </MainContainer>
+      </MainContainer>
+      <PageStyledFooter position={3}/>
+    </>
   );
 }
 

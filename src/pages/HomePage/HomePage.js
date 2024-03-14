@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import PageStyledFooter from "../../components/PageStyledFooter";
 
 export default function HomePage() {
    
   return (
+    <>
       <MainContainer id='homeSection'>
 
         <GreetingsBox>
@@ -11,6 +13,8 @@ export default function HomePage() {
         </GreetingsBox>
 
       </MainContainer>
+      <PageStyledFooter />
+    </>
   );
 }
 

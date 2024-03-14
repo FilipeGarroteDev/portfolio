@@ -1,13 +1,18 @@
 import styled from "styled-components";
+import PageStyledFooter from "../../components/PageStyledFooter";
+import PageStyledHeader from "../../components/PageStyledHeader";
 
 export default function MyServices() {
   
 
   return (
-    <MainContainer id='serviçosSection'>
-        <h1>Serviços</h1>
-
-    </MainContainer>
+    <>
+      <PageStyledHeader position={3}/>
+      <MainContainer id='serviçosSection'>
+          <h1>Serviços</h1>
+      </MainContainer>
+      <PageStyledFooter position={4}/>
+    </>
   );
 }
 

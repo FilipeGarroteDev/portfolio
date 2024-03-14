@@ -38,8 +38,9 @@ const MenuContainer = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 70%;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5)
+  opacity: 90%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  z-index:10
 `;
 
 const ContactSection = styled.section`

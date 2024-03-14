@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import PageStyledHeader from "../../components/PageStyledHeader";
 
 export default function Avaliations() {   
 
   return (
-    <MainContainer id='avaliaçõesSection'>
-        <h1>Avaliações</h1>
+    <>
+      <PageStyledHeader position={4}/>
+      <MainContainer id='avaliaçõesSection'>
+          <h1>Avaliações</h1>
 
-    </MainContainer>
+      </MainContainer>
+    </>
+     
   );
 }
 
