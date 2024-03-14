@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -51,10 +52,12 @@ table {
 }
 
 *{
+	box-sizing: border-box;
+
 	&::-webkit-scrollbar-track {
 		width: 0px;
 		background: transparent;        /* color of the tracking area */
-}
+	}
 
 	&::-webkit-scrollbar-thumb {
   	background-color: rgba(0, 0, 0, 0.4);    /* color of the scroll thumb */
