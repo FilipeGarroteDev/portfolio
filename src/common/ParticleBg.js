@@ -47,7 +47,7 @@ export default function ParticleBg() {
             consent: false,
             distance: 40,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.8,
             width: 0.5
           },
           move: {
